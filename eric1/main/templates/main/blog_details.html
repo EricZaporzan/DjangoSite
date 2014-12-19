@@ -1,0 +1,19 @@
+{% extends "main/index.html" %}
+
+{%  block content %}
+        {% if detail_post %}
+            <div class="jumbotron">
+                <h3>{{ detail_post.title }}</h3>
+                <hr>
+                <h5>{{ detail_post.body }}</h5>
+                <hr>
+                <h6>{{ detail_post.published }}</h6>
+            </div>
+        {% else %}
+            <div class="jumbotron">
+                There doesn't seem to be anything here. This is awkward.
+            </div>
+        {% endif %}
+{%  endblock %}
+
+{%  block active-tab %}blog{% endblock %}

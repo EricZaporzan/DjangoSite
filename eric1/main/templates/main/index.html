@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eric Zaporzan {% if title %} – {{ title }}{% else %}{% endif %}</title>
+        <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/basic.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+        <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="application/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Eric Zaporzan</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li id="home"><a href="/">Home</a></li>
+                        <li id="blog"><a href="/blog/">Blog</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="http://facebook.com/Zaporzan" class="header-social-icon" target="blank"><i class="fa fa-facebook fa-2"></i></a></li>
+                        <li><a href="http://twitter.com/EricZaporzan" class="header-social-icon" target="blank"><i class="fa fa-twitter fa-2"></i></a></li>
+                        <li><a href="https://www.linkedin.com/profile/view?id=238297075" class="header-social-icon" target="blank"><i class="fa fa-linkedin fa-2"></i></a></li>
+                        <li><a href="https://plus.google.com/u/0/105919980734941612475" class="header-social-icon" target="blank"><i class="fa fa-google-plus fa-2"></i></a></li>
+                        <li><a href="https://github.com/EricZaporzan" class="header-social-icon" target="blank"><i class="fa fa-github fa-2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            {%  block content %}
+                <div class="jumbotron">
+                    <h1>Eric Zaporzan <small>Computer Scientist</small></h1>
+
+                </div>
+                <div class="jumbotron">
+                    <h2>Education</h2>
+                    <h4>University of Toronto, St. George</h4>
+                    <h5>Computer Science Specialist</h5>
+                    <h5>Computational Linguistics Focus</h5>
+                    <h5>Toronto, Ontario</h5>
+                    <h5>Expected Graduation: Spring 2016</h5>
+                    <hr>
+                    <h4>Shaftesbury High School</h4>
+                    <h5>Winnipeg, Manitoba</h5>
+                    <h5>June 2011</h5>
+                </div>
+                <div class="jumbotron">
+                    <h2>Work</h2>
+                    <h4>Software Engineer</h4>
+                    <h5>Ontario Ministry of Health and Long-Term Care</h5>
+                    <h5>September 2014 – Present</h5>
+                    <hr>
+                    <h4>Web Developer</h4>
+                    <h5>EatSleepRIDE Mobile</h5>
+                    <h5>May 2014 – August 2014</h5>
+                    <hr>
+                    <h4>Desktop Support Technician</h4>
+                    <h5>The Wawanesa Mutual Insurance Company</h5>
+                    <h5>May 2013 – August 2013</h5>
+                </div>
+            {%  endblock %}
+        </div>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#{%  block active-tab %}home{% endblock %}").addClass("active");
+            });
+        </script>
+    </body>
+</html>

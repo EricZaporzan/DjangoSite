@@ -1,0 +1,81 @@
+body {
+    background-color: #002E62;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+a {
+    color: #002E62;
+}
+
+a:hover {
+    color: #AAA9A3;
+}
+
+.jumbotron {
+    background-color: white;
+    color: #002E62;
+}
+
+.navbar-default {
+    background-color: white;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+    color: #002E62;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #AAA9A3;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #002E62;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #AAA9A3;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #990000;
+}
+
+a>i {
+    color: #002E62;
+}
+
+/* fontawesome icon sizes */
+i.fa-1 {
+    font-size: 1em;
+}
+i.fa-2 {
+    font-size: 2em;
+}
+i.fa-3 {
+    font-size: 3em;
+}
+i.fa-4 {
+    font-size: 4em;
+}
+i.fa-5 {
+    font-size: 5em;
+}
+
+.navbar-right>li>a {
+    padding-bottom: 0;
+}
+
+.navbar-right>li>a>i:hover {
+    color: #990000;
+}
+
+h1>small {
+    color: #002E62;
+    opacity: 0.75;
+}

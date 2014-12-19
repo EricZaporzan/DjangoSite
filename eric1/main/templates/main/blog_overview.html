@@ -1,0 +1,21 @@
+{% extends "main/index.html" %}
+
+{%  block content %}
+        {% if blogposts %}
+            {% for blogpost in blogposts %}
+                <div class="jumbotron">
+                    <h3><a href="/blog/{{ blogpost.post_id }}">{{ blogpost.title }}</a></h3>
+                    <hr>
+                    <h5>{{ blogpost.body }}</h5>
+                    <hr>
+                    <h6>{{ blogpost.published }}</h6>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="jumbotron">
+                No posts... yet!
+            </div>
+        {% endif %}
+{%  endblock %}
+
+{%  block active-tab %}blog{% endblock %}
